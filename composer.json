@@ -1,0 +1,44 @@
+{
+    "name": "islomzoda/ozonupdatestock",
+    "description": "Данный пакеть предназначень для обнавление остаков в Озон",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kuzibaev Muhammad",
+            "email": "islomzoda20@yandex.ru",
+            "homepage": "jonee.ru"
+        }
+    ],
+    "homepage": "https://github.com/islomzoda/ozonupdatestock",
+    "keywords": ["Laravel", "OzonUpdateStock"],
+    "require": {
+        "illuminate/support": "~9",
+        "maatwebsite/excel": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Islomzoda\\OzonUpdateStock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Islomzoda\\OzonUpdateStock\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Islomzoda\\OzonUpdateStock\\OzonUpdateStockServiceProvider"
+            ],
+            "aliases": {
+                "OzonUpdateStock": "Islomzoda\\OzonUpdateStock\\Facades\\OzonUpdateStock"
+            }
+        }
+    },
+    "prefer-stable": true
+}
